@@ -1,0 +1,93 @@
+     body {
+        font-family: Trebuchet MS;
+        background: #f1f1f1;
+    }
+    
+    .invoca {
+      width: 480px;
+      text-align:center;
+      margin: auto;
+    }
+
+    .invoca img {
+      width: 480px;
+      margin: 35px 0 0 0;
+    }
+    
+
+    .invoca label {
+          display: inline-block;
+          margin-right: 5px;
+          min-width: 140px;
+          text-align: right;
+    }
+    
+    .invoca span {
+        overflow: hidden;
+        padding: 3px;
+        position: relative;
+        top: -1px;
+        width: 183px;
+    }
+        
+    .invoca input {
+        border-radius: 2px;
+        height: 30px;
+        line-height: 30px;
+        margin: 10px 0;
+        padding-left: 5px;
+        width: 183px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+
+    .phone-number {
+      font-size:25px;
+    }
+
+    li {
+      list-style: none;
+    }   
+  
+    
+    
+
+    /* Heartbeat animation */
+
+    @-webkit-keyframes heartbeat{
+        0%     { -webkit-transform:scale(1,1); }
+        49%    { -webkit-transform:scale(.5,.5); }
+        50%    { background-color:rgba(0,200,0,.2); }
+        100%   { -webkit-transform:scale(1,1); }
+    }
+    @-moz-keyframes heartbeat{
+        0%     { -moz-transform:scale(1,1); }
+        49%    { -moz-transform:scale(.5,.5); }
+        50%    { background-color:rgba(0,200,0,.2); }
+        100%   { -moz-transform:scale(1,1); }
+    }
+    @keyframes heartbeat{
+        0%     { transform:scale(1,1); }
+        49%    { transform:scale(.5,.5); }
+        50%    { background-color:rgba(0,200,0,.2); }
+        100%   { transform:scale(1,1); }
+    }
+
+    .heartbeat {
+        animation: 1.65s ease 0s normal none infinite running heartbeat;
+        background-color: rgba(0, 200, 0, 0.5);
+        border-radius: 30px;
+        height: 15px;
+        margin: auto auto auto 200px;
+        position: relative;
+        left: -144px;
+        top: -71px;
+        width: 15px;
+        display: inline-block;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -webkit-animation: heartbeat 1.65s infinite;
+    }
